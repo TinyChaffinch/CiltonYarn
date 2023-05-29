@@ -1,0 +1,253 @@
+/* poppins-100 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/poppins-v20-latin-100.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-200 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/poppins-v20-latin-200.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-300 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins-v20-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-800 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/poppins-v20-latin-800.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-900 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Poppins';
+    color: #fff;
+}
+
+/* Header style start */
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #B52472;
+    padding: 30px 100px 30px 130px;
+}
+
+.header-title {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.menu-item {
+    position: relative;
+    margin-right: 38px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    transition: .3s linear;
+}
+
+.menu-item::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    background: #000 0 0;
+    height: 5px;
+    width: 0;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.menu-item:hover,
+.menu-item:focus,
+.menu-item:active {
+    color: #000;
+}
+
+.menu-item:hover::after,
+.menu-item:focus::after,
+.menu-item:active::after {
+    width: 100%;
+    left: 0;
+}
+
+.header-button {
+    padding: 8px 25px;
+    margin-left: 27px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    border-radius: 8px;
+}
+
+/* Header style end */
+
+
+/* Intro style start */
+
+.intro {
+    background: url(../img/bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 131px 0 73px 0;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-title {
+    font-size: 64px;
+    line-height: 96px;
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+.intro-subtitle {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.intro-desc {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 28px;
+    width: 50%;
+}
+
+.intro-buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro-button {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #E22B6D;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.intro-sign-up {
+    padding: 10px 33px;
+    margin-right: 72px;
+}
+
+.intro-login {
+    padding: 10px 45px;
+}
+
+/* Intro style end */
