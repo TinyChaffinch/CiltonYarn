@@ -111,7 +111,15 @@ html {
 
 body {
     font-family: 'Poppins';
-    color: #fff;
+    color: #000;
+}
+
+b {
+    font-weight: bold;
+}
+
+.purp-word {
+    color: #E22B6D;
 }
 
 /* Header style start */
@@ -122,6 +130,7 @@ body {
     justify-content: space-between;
     background-color: #B52472;
     padding: 30px 100px 30px 130px;
+    color: #fff;
 }
 
 .header-title {
@@ -198,18 +207,36 @@ body {
     background: url(../img/bg.jpg) no-repeat center;
     background-size: cover;
     padding: 131px 0 73px 0;
+    position: relative;
+    color: #fff;
+}
+
+.intro:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(14, 13, 13, .7);
+    z-index: 2;
+}
+
+.intro-text {
+    z-index: 3;
+    position: relative;
     font-weight: 500;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .intro-title {
     font-size: 64px;
     line-height: 96px;
     margin-bottom: 36px;
-    text-align: center;
 }
 
 .intro-subtitle {
@@ -220,7 +247,6 @@ body {
 .intro-desc {
     font-size: 20px;
     font-weight: 400;
-    text-align: center;
     line-height: 30px;
     margin-bottom: 28px;
     width: 50%;
@@ -251,3 +277,440 @@ body {
 }
 
 /* Intro style end */
+
+
+/* Thread style start */
+
+.thread {
+    padding: 47px 100px 73px 100px;
+}
+
+.thread-title {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.thread-desc {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 75px 48px 75px;
+}
+
+.thread-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.thread-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+    line-height: 24px;
+    font-size: 16px;
+    position: relative;
+}
+
+.thread-card-img {
+    margin-bottom: 16px;
+}
+
+.thread-card-title {
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+
+.thread-card-desc {
+    flex: 1;
+    margin-bottom: 50px;
+    font-weight: 500;
+    color: #766666;
+}
+
+.thread-card-btn {
+    padding: 8px 21px;
+    background: #E22B6D;
+    border-radius: 40px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Thread style end */
+
+
+/* Think style start */
+
+.think {
+    background: url(../img/bg-2.png) no-repeat center;
+    background-size: cover;
+    padding: 54px 185px;
+    position: relative;
+    color: #fff;
+}
+
+.think:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 2;
+}
+
+.think-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+}
+
+.think-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 19px;
+}
+
+.think-desc {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.think-btn {
+    padding: 13px 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    background: #E22B6D;
+    color: #fff;
+    border-radius: 4px;
+}
+
+/* Think style end */
+
+
+/* Classes style start */
+
+.classes {
+    padding: 35px 100px 100px 100px;
+    text-align: center;
+}
+
+.classes-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 28px;
+}
+
+.classes-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 70px;
+}
+
+.class-thread {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.class-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.class-card-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.class-card-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 22px;
+    color: rgba(38, 33, 33, 0.78);
+}
+
+.class-card-btn {
+    padding: 7px 23px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    background: #E22B6D;
+    text-decoration: none;
+    color: #fff;
+}
+
+.class-card-1-img {
+    margin-bottom: 32px;
+}
+
+.class-titleblock {
+    padding: 15px 10px 15px 25px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    text-align: left;
+}
+
+.grey-titleblock {
+    background: #766666;
+}
+
+.purp-titleblock {
+    background: #E22B6D;
+}
+
+.show-more-titleblock {
+    background: #000;
+    margin-top: 11px;
+}
+
+.class-show-more {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 40px;
+}
+
+.class-subdesc {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 40px 0 34px 0;
+}
+
+/* Classes style end */
+
+
+/* Video style start */
+
+.video {
+    width: 100%;
+}
+
+.video-wrapper {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.video-item {
+    padding-top: 30%;
+}
+
+.video-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Video style end */
+
+
+/* Gallery style start */
+
+.gallery {
+    padding: 63px 100px 95px 100px;
+}
+
+.gallery-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+
+.gallery-images img {
+    transition: .2s ease-in-out;
+}
+
+.gallery-images img:hover {
+    scale: 1.2;
+}
+
+/* Gallery style end */
+
+
+/* Send-us style start */
+
+.send-us {
+    padding: 30px 100px 55px 100px;
+    background: #E22B6D;
+}
+
+.send-us-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.send-us-title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #fff;
+}
+
+.send-us-input {
+    min-width: 300px;
+    padding: 18px 25px;
+    border: none;
+    border-radius: 8px;
+}
+
+.send-us-submit {
+    padding: 18px 110px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Send-us style end */
+
+
+/* Contact style start */
+
+.contact {
+    padding: 67px 100px 110px 100px;
+}
+
+.contact-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-desc {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-right: 150px;
+}
+
+.contact-desc-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 45px;
+}
+
+.contact-desc-sub {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+/* Contact style end */
+
+
+/* Footer style end */
+
+.footer {
+    padding: 40px 100px 20px 100px;
+    margin-bottom: 120px;
+    background: #2F2929;
+}
+
+.footer-blocks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.footer-block-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #E22B6D;
+    margin-bottom: 16px;
+}
+
+.footer-block-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+}
+
+.footer-block-nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.footer-block-nav li {
+    text-align: center;
+}
+
+.footer-block-nav-item {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #fff;
+}
+
+.footer-block-image {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px 30px;
+}
+
+.footer-copyright {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Footer style end */
